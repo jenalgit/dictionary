@@ -1,6 +1,6 @@
 <?php 
 $this->output('header'); 
-echo $db;
+
 ?>
 <body>
     <div id="konten">

@@ -34,8 +34,8 @@ class Dict {
         return $result;
     }
 
-    public function save($crb,$ina,$eng) {
-        $query = "INSERT INTO dict_data(crb_lang, ina_lang, eng_lang) VALUES ('".$crb."','".$ina."','".$eng."')";
+    public function save($crb,$ina,$eng,$status=0,$priority=1) {
+        $query = "INSERT INTO dict_data(crb_lang, ina_lang, eng_lang,status,priority) VALUES ('".$crb."','".$ina."','".$eng."','".$status."','".$priority."')";
         $result = $this->db->results($query);
         return $result;
     }
@@ -44,8 +44,8 @@ class Dict {
         $query = "DELETE FROM dict_data WHERE id='".$id."'";
         return $this->db->results($query);
     }
-    public function update($id,$crb,$ina,$eng) {
-        $query = "UPDATE dict_data SET crb_lang='".$crb."',ina_lang='".$ina."',eng_lang='".$eng."' WHERE id='".$id."'";
+    public function update($id,$crb,$ina,$eng,$status=0,$priority=1) {
+        $query = "UPDATE dict_data SET crb_lang='".$crb."',ina_lang='".$ina."',eng_lang='".$eng."',status='".$status."',priority='".$priority."' WHERE id='".$id."'";
         return $this->db->results($query);
     }
 

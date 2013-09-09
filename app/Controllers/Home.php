@@ -19,7 +19,6 @@ class Home extends Resources\Controller
     public function manage()
     {
         $data['title'] = 'Manage Dictonary';
-        $data['db']=  $this->db->asal();
         $this->output('manage', $data);
     }
     public function save($param) {
