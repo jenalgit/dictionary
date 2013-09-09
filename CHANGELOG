@@ -1,0 +1,27 @@
+Version 1.1.0 work in progress
+-------------------------------
+- New 66c9631: Upate json composer type from library to project
+- New 48aecc4: Embrace composer autoloader by adding new method "composer" in Import class
+- Bug d2354be: Bug fix if no data return in method getAll within AR call
+- New a475aba: Bug fix for "IN" database query with lowercase string
+- New 418b0bf: New redis auth method ref #56
+- New 86fab29: New getAllValue() method in Session Driver
+- Bug 1ad1359: Fix undefined APP constant in check.php file
+- New 4f5c3b6: Add image multiple processing in one upload process
+- Bug 58327fd: Fix for issue #58
+- Bug 67ae4b4: Fix error when generate $cacheKey for array value in Resource\ActiveRecord::get() method
+- Bug 5e88f22: Fix typo for "connect" word
+- Bug d096fca: Fix indentation
+- Bug b026cd1: Fix PGDriver for encoding option
+- New 844e393: Add this CHANGELOG file
+- New ca43ad3: Add default time zone setter
+- New cc5cc53: Add composer.json file
+- New 85ef534: Add default exception handler for global uncaught exception
+- Enh 9b4c67d: Remove try catch in Drivers\Cache\Redis and throw it to default exception handler
+- Bug 76cc343: Fix bug getFileExtension in PHP 5.4.6 ref #55
+- New d6b652e: Add storageName in session config file as cookieChekSumName value so it more configable
+- Enh 7ce0be9: Enhance process for creation of nested directories in Resource\Upload::errorHandler() method
+ 
+Version 1.0.0 Dec 20, 2012
+----------------------------
+Initial release
