@@ -1,6 +1,3 @@
-<?php 
-$baseurl=$this->uri->baseUri;
-?>
 <!DOCTYPE html>
 <html>
 <head>

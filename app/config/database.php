@@ -8,7 +8,7 @@ return array(
         'port' => 3306,
         'user' => 'root',
         'password' => '',
-        'database' => 'panada',
+        'database' => 'db_dict',
         'tablePrefix' => '',
         'charset' => 'utf8',
         'collate' => 'utf8_general_ci',
